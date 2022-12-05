@@ -21,8 +21,6 @@ while Lives != 0:
     seperate_Word.remove(letterGuessed)
     if seperate_Word == []:
       print("You win")
-      return
-    Lives += +1
   else:
     Lives += -1
     print(f'Number of lives left: {Lives}')
