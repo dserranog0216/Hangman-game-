@@ -7,6 +7,7 @@ Lives = numOfLetter
 # print(numOfLetter)
 seperate_Word= list(wordChosen)
 # print(seperate_Word)
+
 print(f'You are now playing Hangman. You have {Lives} lives.')
 guessed=list()
 for x in str(numOfLetter):
@@ -17,7 +18,7 @@ for x in str(numOfLetter):
 
 
 
-  
+
 while Lives != 0:
   letterGuessed = input("guess a letter: ")
   letterGuessed
@@ -27,12 +28,13 @@ while Lives != 0:
      guessed.append(letterGuessed)
      print(guessed)
      if seperate_Word == []:
-       print("You win")
+       print(f'You win the word was {wordChosen}')
           
        break
   else:
      Lives += -1
      print(f'Number of lives left: {Lives}')
+
 
 
 
